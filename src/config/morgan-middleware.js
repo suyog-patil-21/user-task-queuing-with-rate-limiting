@@ -1,7 +1,7 @@
 const morgan = require("morgan");
 const { logger } = require("./logger");
 
-const morganMiddleware = morgan('dev',
+const morganMiddleware = morgan('combined',
     {
         stream: {
             write: (data) => {
